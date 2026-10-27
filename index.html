@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="A beautiful advance birthday wish for Surekha, lovingly called Kokku.">
+  <title>Wishes for Kokku</title>
+  <link rel="icon" type="image" href="p1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="developer-section.css">
+</head>
+<body>
+
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <div class="gate-box">
+    <p class="eyebrow">Welcome</p>
+    <h2 id="gateTitle">Who are you to Surekha?</h2>
+    <label class="gate-name">Your name
+      <input id="visitorName" type="text" maxlength="40" placeholder="Type your name" autocomplete="off">
+    </label>
+    <div class="gate-opts">
+      <button type="button" class="gate-opt" data-rel="Friend">Friend</button>
+      <button type="button" class="gate-opt" data-rel="Cousin">Cousin</button>
+      <button type="button" class="gate-opt" data-rel="Brother">Brother</button>
+      <button type="button" class="gate-opt" data-rel="Sister">Sister</button>
+      <button type="button" class="gate-opt" data-rel="Colleague">Colleague</button>
+      <button type="button" class="gate-opt" data-rel="Bava">Bava</button>
+      <button type="button" class="gate-opt" data-rel="Other">Other</button>
+    </div>
+  </div>
+</div>
+
+<div class="bgshow" aria-hidden="true">
+  <img data-photo="0" alt="">
+  <img data-photo="1" alt="">
+  <img data-photo="2" alt="">
+  <img data-photo="3" alt="">
+  <img data-photo="4" alt="">
+</div>
+<div class="aurora" aria-hidden="true"></div>
+
+<div class="switch" role="group" aria-label="Choose a design">
+  <button type="button" data-theme="t-blush" aria-pressed="true">Blush garden</button>
+  <button type="button" data-theme="t-night" aria-pressed="false">Midnight stars</button>
+  <button type="button" data-theme="t-gold" aria-pressed="false">Golden confetti</button>
+  <button type="button" data-theme="t-balloon" aria-pressed="false">Balloon sky</button>
+</div>
+
+<main class="stage">
+  <section class="hero">
+    <p class="eyebrow">A special wish for</p>
+    <h1>Surekha</h1>
+    <p class="alias">alias Kokku</p>
+    <p class="typed"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+    <p class="hint">Tap anywhere for a surprise</p>
+    <p class="rel-line" data-rel-line></p>
+  </section>
+
+  <section class="carousel" aria-roledescription="carousel" aria-label="Photos">
+    <figure class="slide is-active"><img data-photo="0" alt="Portrait in a purple saree with gold jhumka earrings"></figure>
+    <figure class="slide"><img data-photo="1" alt="Selfie holding a dark green phone"></figure>
+    <figure class="slide"><img data-photo="2" alt="Close-up in a red and gold saree with gold bangles"></figure>
+    <figure class="slide"><img data-photo="3" alt="Portrait in a green saree with a gold necklace"></figure>
+    <figure class="slide"><img data-photo="4" alt="Half-saree in cream and magenta, seated in front of a wooden bench"></figure>
+    <p class="rel-line cap" data-rel-line></p>
+  </section>
+
+  <article class="card">
+    <p class="dear">Dear Surekha,</p>
+    <p class="relmsg" id="relMsg"></p>
+    <p>You bring warmth, laughter and a little bit of magic into every room you walk into.</p>
+    <p>Advance birthday wishes for your birthday on December 27, 2026. I hope your day is full of happy moments, good food, and people who make you smile.</p>
+    <p>Thank you for being such a sweet, cute mardal, and an even sweeter friend. You are dearly loved.</p>
+    <p class="sign" id="sign">With all my love, always</p>
+  </article>
+
+  <section class="countdown" aria-label="Birthday countdown">
+    <p class="cd-label">Birthday countdown to December 27, 2026</p>
+    <div class="cd-grid">
+      <div><span id="cd-d">--</span><small>days</small></div>
+      <div><span id="cd-h">--</span><small>hours</small></div>
+      <div><span id="cd-m">--</span><small>minutes</small></div>
+      <div><span id="cd-s">--</span><small>seconds</small></div>
+    </div>
+    <p class="cd-msg" id="cd-msg"></p>
+    <p class="rel-line" data-rel-line></p>
+  </section>
+
+  <section class="contact" aria-label="Send wishes">
+    <h2>Advance Birthday Wishes</h2>
+    <label class="rel">Who are you to Surekha?
+      <select id="relation">
+        <option value="">Choose one</option>
+        <option>Friend</option>
+        <option>Cousin</option>
+        <option>Brother</option>
+        <option>Sister</option>
+        <option>Colleague</option>
+        <option>Bava</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <p>Send your advance birthday wishes for December 27, 2026. Tap a button to send them directly.</p>
+    <div class="btns">
+      <a class="btn" id="waBtn" href="https://wa.me/918919292016" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="https://www.instagram.com/_trending.tunes/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="relwish" id="relWish"></p>
+    <div class="btns">
+      <button type="button" class="main" id="copyWish">Copy my wish</button>
+    </div>
+    <p class="num">+91 891 929 2016</p>
+  </section>
+
+  <div class="actions">
+    <button type="button" class="main" id="replay">Type it again</button>
+  </div>
+</main>
+
+
+
+<footer class="footer">
+  <p class="eyebrow">The party</p>
+  <h2>Join the celebration</h2>
+  <p><strong>The Gala Town, Nagasandra, Bengaluru</strong></p>
+  <p>Date and time to be announced</p>
+  <div class="strip" aria-hidden="true">
+    <div class="track-x">
+      <img class="thumb" data-photo="0" alt="">
+      <img class="thumb" data-photo="1" alt="">
+      <img class="thumb" data-photo="2" alt="">
+      <img class="thumb" data-photo="3" alt="">
+      <img class="thumb" data-photo="4" alt="">
+      <img class="thumb" data-photo="0" alt="">
+      <img class="thumb" data-photo="1" alt="">
+      <img class="thumb" data-photo="2" alt="">
+      <img class="thumb" data-photo="3" alt="">
+      <img class="thumb" data-photo="4" alt="">
+    </div>
+  </div>
+  <p>Are you coming?</p>
+  <div class="btns">
+    <button type="button" class="main" data-rsvp="Yes">Yes</button>
+    <button type="button" class="ghost" data-rsvp="Maybe">Maybe</button>
+    <button type="button" class="ghost" data-rsvp="No">No</button>
+  </div>
+  <p class="rsvp-msg" id="rsvpMsg" aria-live="polite"></p>
+  <p><a class="btn rsvp-wa" id="rsvpWa" href="https://wa.me/918919292016" target="_blank" rel="noopener" hidden>Send answer on WhatsApp</a></p>
+  <section class="from-her" id="fromHer" hidden>
+    <p class="eyebrow">A message from Surekha</p>
+    <p id="fromHerText" data-general="Thank you for your lovely wishes and for being part of my special day. Your kind words mean so much to me, and I'm grateful to have you in my life.">Thank you for your lovely wishes and for being part of my special day. Your kind words mean so much to me, and I'm grateful to have you in my life.</p>
+    <p class="sign">With love, Surekha</p>
+  </section>
+</footer>
+
+<!-- Developer profile showcase -->
+<section class="site-developer" id="siteDeveloper" aria-labelledby="siteDeveloperTitle">
+  <div class="sd-orb sd-orb-one" aria-hidden="true"></div>
+  <div class="sd-orb sd-orb-two" aria-hidden="true"></div>
+
+  <div class="sd-heading">
+    <span class="sd-kicker"><span class="sd-kicker-dot"></span> THE CREATOR BEHIND THIS EXPERIENCE</span>
+    <h2>Meet the <span>Developer</span></h2>
+    <p>Ideas, creativity and code — brought together with care.</p>
+  </div>
+
+  <article class="sd-card">
+    <div class="sd-photo-wrap">
+      <div class="sd-photo-ring">
+        <img src="developer-yaswanth.png" alt="Korivi Yaswanth, Founder and Developer" loading="lazy">
+      </div>
+      <span class="sd-online"><span></span> Open to opportunities</span>
+    </div>
+
+    <div class="sd-copy">
+      <span class="sd-overline"><i class="bi bi-code-slash" aria-hidden="true"></i> FOUNDER &amp; DEVELOPER</span>
+      <h3 id="siteDeveloperTitle">Korivi Yaswanth</h3>
+      <p class="sd-role">Founder of <strong>YaswanthInfotech</strong></p>
+      <p class="sd-learning">Python Full Stack Development Learner</p>
+      <p class="sd-bio">I build thoughtful, responsive digital experiences with a focus on clean design, useful functionality and delightful details. I enjoy turning ideas into websites that feel polished, intuitive and memorable.</p>
+
+      <div class="sd-skills" aria-label="Areas of interest">
+        <span>Web Development</span><span>UI / UX</span><span>Python</span><span>E-commerce</span>
+      </div>
+
+      <div class="sd-actions">
+        <a class="sd-button sd-button-primary" href="mailto:yaswanthinfotech@gmail.com"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Email Me</a>
+        <a class="sd-button sd-button-whatsapp" href="https://wa.me/918125807927" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+      </div>
+
+      <div class="sd-socials">
+        <a href="https://www.linkedin.com/in/korivi-yaswanth-55277a2b1/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        <a href="https://www.instagram.com/yaswanthinfotech.in/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram" aria-hidden="true"></i> YaswanthInfotech</a>
+        <button type="button" id="sdCopyEmail"><i class="bi bi-copy" aria-hidden="true"></i> Copy email</button>
+      </div>
+    </div>
+    <span class="sd-card-spark sd-spark-one" aria-hidden="true">✦</span>
+    <span class="sd-card-spark sd-spark-two" aria-hidden="true">✧</span>
+  </article>
+
+  <p class="sd-signoff"><i class="bi bi-heart-fill" aria-hidden="true"></i> Made with curiosity, creativity and code</p>
+
+  <div class="sd-project">
+    <div class="sd-project-glow" aria-hidden="true"></div>
+    <div class="sd-project-copy">
+      <span class="sd-project-kicker">HAVE A PROJECT IDEA?</span>
+      <h3>Let’s make something <em>beautiful</em> together.</h3>
+      <p>Have an idea for a website or digital project? Let’s talk about it.</p>
+    </div>
+    <div class="sd-project-actions">
+      <a href="https://wa.me/918125807927?text=Hi%20Yaswanth%2C%20I%20have%20a%20project%20idea" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> Start a conversation</a>
+      <a class="sd-email-link" href="mailto:yaswanthinfotech@gmail.com"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<script src="script.js"></script>
+<script src="developer-section.js"></script>
+</body>
+</html>
